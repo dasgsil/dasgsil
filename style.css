@@ -1,0 +1,171 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+header {
+    background: linear-gradient(135deg, #0d1b2a, #1b263b);
+    color: white;
+    padding: 3em 1em 2em;
+    text-align: center;
+    position: relative;
+}
+.logo {
+    width: 120px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+nav {
+    background: #1b263b;
+    text-align: center;
+    padding: 1em 0;
+}
+nav a {
+    color: #f0f0f0;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #00b4d8;
+}
+section {
+    padding: 2em;
+    background: #1e1e1e;
+    margin: 1em auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+section h2 {
+    color: #00b4d8;
+    margin-top: 0;
+}
+section img {
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 5px;
+}
+footer {
+    background: #0d1b2a;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 1.5em;
+    font-size: 0.9em;
+    margin-top: 2em;
+}
+ul {
+    padding-left: 1.2em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+input, textarea {
+    padding: 0.8em;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #f0f0f0;
+}
+input[type="submit"] {
+    background-color: #00b4d8;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+input[type="submit"]:hover {
+    background-color: #0077b6;
+}
+
+.fade-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease;
+}
+.fade-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.testimonios blockquote {
+    background: #2a2a2a;
+    padding: 1em;
+    margin: 1em 0;
+    border-left: 5px solid #00b4d8;
+    border-radius: 5px;
+    font-style: italic;
+}
+.testimonios cite {
+    display: block;
+    margin-top: 0.5em;
+    font-weight: bold;
+    color: #a8dadc;
+}
+.social-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.social-buttons a {
+    background: #00b4d8;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.social-buttons a:hover {
+    background: #0077b6;
+}
+
+/* Botones profesionales */
+button, input[type="submit"], .social-buttons a {
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    display: inline-block;
+}
+button:hover, input[type="submit"]:hover, .social-buttons a:hover {
+    background-color: #0077b6;
+    transform: scale(1.05);
+}
